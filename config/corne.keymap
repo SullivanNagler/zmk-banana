@@ -32,12 +32,12 @@
         };
 
         m {
-            bindings = <&kt M>;
+            bindings = <&kt I>;
             key-positions = <35 23>;
         };
 
         z {
-            bindings = <&kt Z>;
+            bindings = <&kt BACKSPACE>;
             key-positions = <23 11>;
         };
     };
