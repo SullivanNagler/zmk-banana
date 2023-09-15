@@ -20,7 +20,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp B  &kp E  &kp P     &kp O      &kp E        &kp M    &kp V      &kp D          &kp L  &kp J  &trans
+&trans  &kp B  &kp É  &kp P     &kp O      &kp È        &kp M    &kp V      &kp D          &kp L  &kp J  &trans
 &trans  &kp A  &kp U  &kp I     &kp E      &kp COMMA    &kp C    &kp T      &kp S          &kp R  &kp N  &trans
 &trans  &kp A  &kp Y  &kp X     &kp DOT    &kp K        &kp SQT  &kp Q      &kp G          &kp H  &kp F  &trans
                       &kp LGUI  &kp SPACE  &mo 1        &mo 2    &kp ENTER  &kp BACKSPACE
