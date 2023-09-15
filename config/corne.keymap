@@ -30,6 +30,11 @@
             bindings = <&kt RC(ENTER)>;
             key-positions = <36 40>;
         };
+
+        m {
+            bindings = <&kt M>;
+            key-positions = <35 23>;
+        };
     };
 
     keymap {
