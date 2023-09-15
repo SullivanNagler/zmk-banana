@@ -10,14 +10,6 @@
 
 / {
     macros {
-        new_macro: new_macro {
-            compatible = "zmk,behavior-macro";
-            label = "NEW_MACRO";
-            #binding-cells = <0>;
-            bindings =
-                <&kp F24>,
-                <&macro_press>;
-        };
     };
 
     keymap {
@@ -31,10 +23,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&trans  &kp B  &kp F24  &kp P     &kp O      &kp E        &kp M    &kp V      &kp D          &kp L  &kp J  &trans
-&trans  &kp A  &kp U    &kp I     &kp E      &kp COMMA    &kp C    &kp T      &kp S          &kp R  &kp N  &trans
-&trans  &kp A  &kp Y    &kp X     &kp DOT    &kp K        &kp SQT  &kp Q      &kp G          &kp H  &kp F  &trans
-                        &kp LGUI  &kp SPACE  &mo 1        &mo 2    &kp ENTER  &kp BACKSPACE
+&trans  &kp B  &kp E  &kp P     &kp O      &kp E        &kp M    &kp V      &kp D          &kp L  &kp J  &trans
+&trans  &kp A  &kp U  &kp I     &kp E      &kp COMMA    &kp C    &kp T      &kp S          &kp R  &kp N  &trans
+&trans  &kp A  &kp Y  &kp X     &kp DOT    &kp K        &kp SQT  &kp Q      &kp G          &kp H  &kp F  &trans
+                      &kp LGUI  &kp SPACE  &mo 1        &mo 2    &kp ENTER  &kp BACKSPACE
             >;
         };
 
