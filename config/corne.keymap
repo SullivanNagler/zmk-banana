@@ -35,6 +35,11 @@
             bindings = <&kt M>;
             key-positions = <35 23>;
         };
+
+        z {
+            bindings = <&kt Z>;
+            key-positions = <23 11>;
+        };
     };
 
     keymap {
