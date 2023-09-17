@@ -39,7 +39,7 @@
         };
 
         z {
-            bindings = <&kp BSPC>;
+            bindings = <&kp LBKT>;
             key-positions = <22 10>;
             layers = <0>;
         };
