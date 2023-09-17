@@ -47,31 +47,37 @@
         BlueT1 {
             bindings = <&bt BT_SEL 0>;
             key-positions = <1 19>;
+            layers = <0>;
         };
 
         BlueT2 {
             bindings = <&bt BT_SEL 1>;
             key-positions = <2 19>;
+            layers = <0>;
         };
 
         BlueT3 {
             bindings = <&bt BT_SEL 2>;
             key-positions = <3 19>;
+            layers = <0>;
         };
 
         BlueT4 {
             bindings = <&bt BT_SEL 3>;
             key-positions = <4 19>;
+            layers = <0>;
         };
 
         BlueT5 {
             bindings = <&bt BT_SEL 4>;
             key-positions = <5 19>;
+            layers = <0>;
         };
 
         BlueTClear {
             bindings = <&bt BT_CLR>;
-            key-positions = <18 19 1>;
+            key-positions = <19 1>;
+            layers = <1>;
         };
     };
 
