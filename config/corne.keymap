@@ -11,6 +11,12 @@
 
 / {
     macros {
+        grec: grec {
+            compatible = "zmk,behavior-macro";
+            label = "GREC";
+            #binding-cells = <0>;
+            bindings = <&kp RA(LESS_THAN)>;
+        };
     };
 
     combos {
