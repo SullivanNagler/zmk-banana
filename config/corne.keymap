@@ -77,7 +77,7 @@
             >;
         };
 
-        lower_layer {
+        UN_1 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  "  |  «  |  »  |  (   |  )  |   |  @  |  +  |  -  |  /  |  *  |  =   |
             // | BTCLR| BT1 | BT2 | BT3 | BT4  |     |   | LFT | DWN |  UP | RGT |     |      |
@@ -92,7 +92,7 @@
             >;
         };
 
-        raise_layer {
+        deux_2 {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4   |  5  |   |  6  |  7  |  8  |  9  |  0  |  °   |
             // | ESC  |     |     |     |      |     |   |  =  |  %  |  z  |  w  |  ç  |  $   |
@@ -108,10 +108,10 @@
             >;
         };
 
-        layer_3 {
+        UN_DEUX_3 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GT  &kp LT  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
