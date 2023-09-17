@@ -32,13 +32,8 @@
             key-positions = <36 41>;
         };
 
-        ctrlEnter {
-            bindings = <&kt RC(ENTER)>;
-            key-positions = <36 40>;
-        };
-
         m {
-            bindings = <&kt SQT>;
+            bindings = <&kp SQT>;
             key-positions = <34 22>;
             layers = <0>;
         };
@@ -47,6 +42,20 @@
             bindings = <&kp BSPC>;
             key-positions = <22 10>;
             layers = <0>;
+        };
+    };
+
+    behaviors {
+        maj: maj {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MAJ";
+            bindings =
+                <&kp>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <1>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -61,10 +70,10 @@
             //                    | GUI | LWR | SPC |     | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R      &kp T    &kp Y  &kp U      &kp I          &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D      &kp F      &kp G    &kp H  &kp J      &kp K          &kp L    &kp SEMI  &kp I
-&kp LSHFT  &kp Z  &kp X  &kp C      &kp V      &kp B    &kp N  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
-                         &kp RIGHT  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp BACKSPACE
+&kp TAB    &maj Q LS(Q)  &kp W  &kp E      &kp R      &kp T    &kp Y  &kp U      &kp I          &kp O    &kp P     &kp BSPC
+&kp LCTRL  &kp A         &kp S  &kp D      &kp F      &kp G    &kp H  &kp J      &kp K          &kp L    &kp SEMI  &kp I
+&kp LSHFT  &kp Z         &kp X  &kp C      &kp V      &kp B    &kp N  &kp M      &kp COMMA      &kp DOT  &kp FSLH  &kp ESC
+                                &kp RIGHT  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp BACKSPACE
             >;
         };
 
