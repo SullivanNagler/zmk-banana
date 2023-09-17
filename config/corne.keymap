@@ -43,6 +43,36 @@
             key-positions = <22 10>;
             layers = <0>;
         };
+
+        BlueT1 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <1 19>;
+        };
+
+        BlueT2 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <2 19>;
+        };
+
+        BlueT3 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <3 19>;
+        };
+
+        BlueT4 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <4 19>;
+        };
+
+        BlueT5 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <5 19>;
+        };
+
+        BlueTClear {
+            bindings = <&bt BT_CLR>;
+            key-positions = <18 19 1>;
+        };
     };
 
     behaviors {
