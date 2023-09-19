@@ -11,11 +11,11 @@
 
 / {
     macros {
-        grec: grec {
+        flashcard: flashcard {
             compatible = "zmk,behavior-macro";
-            label = "GREC";
+            label = "FLASHCARD";
             #binding-cells = <0>;
-            bindings = <&kp RA(LESS_THAN)>;
+            bindings = <&kp LS(E) &kp LS(X) &kp A &kp O &kp I &kp RET &kp LS(K) &kp A &kp U &kp D &kp X &kp RET &kp LS(B) &kp V &kp P &kp U &kp EQUAL &kp X &kp P &kp SPACE &kp B &kp V &kp V &kp QMARK &kp RET &kp LS(K) &kp A &kp X &kp S &kp LS(N) &kp RET &kp A &kp SEMI &kp LS(N) &kp RET &kp LS(I) &kp LS(X) &kp D &kp LS(N) &kp SPACE &kp Z &kp Z &kp W &kp W &kp RET &kp LS(E) &kp D &kp QMARK &kp LS(E) &kp LS(X)>;
         };
     };
 
@@ -163,10 +163,10 @@
 
         UN_DEUX_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GT  &kp LT  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &flashcard  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GT      &kp LT  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
