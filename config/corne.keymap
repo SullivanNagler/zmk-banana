@@ -97,6 +97,11 @@
             bindings = <&Questce>;
             key-positions = <31 14 16>;
         };
+
+        mPLUS {
+            bindings = <&kp SQT>;
+            key-positions = <21 33>;
+        };
     };
 
     behaviors {
