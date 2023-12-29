@@ -70,12 +70,6 @@
             layers = <0>;
         };
 
-        BlueTClear {
-            bindings = <&bt BT_CLR>;
-            key-positions = <4 2>;
-            layers = <3>;
-        };
-
         Wkey {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <7 19>;
@@ -106,11 +100,6 @@
             bindings = <&kp SQT>;
             key-positions = <21 33>;
         };
-
-        toggle_usb-bluetooth {
-            bindings = <&out OUT_TOG>;
-            key-positions = <3 5>;
-        };
     };
 
     behaviors {
@@ -124,14 +113,14 @@
             tapping-term-ms = <350>;
         };
 
-        wtf: wtf {
+        usbBtClear: usbBtClear {
             compatible = "zmk,behavior-hold-tap";
-            label = "WTF";
-            bindings = <&maj>, <&kp>;
+            label = "USBBTCLEAR";
+            bindings = <&bt>, <&out>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            hold-trigger-key-positions = <18>;
+            tapping-term-ms = <500>;
+            hold-trigger-key-positions = <29>;
         };
     };
 
@@ -184,12 +173,12 @@
             >;
         };
 
-        UN_DEUX_3 {
+        un_deux_3 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GT        &kp LT        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans          &trans  &trans  &trans
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                        &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                       &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans   &trans   &trans   &trans   &usbBtClear BT_CLR OUT_TOG    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans
+                          &trans   &trans   &trans                        &trans        &trans        &trans
             >;
         };
     };
