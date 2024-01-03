@@ -109,10 +109,10 @@
             //                    |     | SPC | PKSP |   | ALT | ENT  |    |
 
             bindings = <
-&none   &kp N1          &kp N2        &kp N3            &kp N4       &kp N5        &kp N6        &kp N7     &kp N8    &kp N9                   &kp N0       &none
-&trans  &kp ESCAPE      &kp TAB       &key_repeat       &key_repeat  &kp K_MUTE    &kp LC(LEFT)  &kp LEFT   &kp UP    &kp RIGHT                &key_repeat  &none
-&none   &kp C_PREVIOUS  &kt C_REWIND  &kp K_PLAY_PAUSE  &kp C_NEXT   &kp C_NEXT    &kp LEFT      &kp DOWN   &kp DOWN  &maj CAPSLOCK RA(COMMA)  &trans       &none
-                                      &trans            &trans       &mo 1         &mo 2         &kp RCTRL  &kp RALT
+&none   &kp N1      &kp N2        &kp N3            &kp N4       &kp N5        &kp N6        &kp N7     &kp N8    &kp N9                   &kp N0       &none
+&trans  &kp ESCAPE  &kp TAB       &key_repeat       &key_repeat  &kp K_MUTE    &kp LC(LEFT)  &kp LEFT   &kp UP    &kp RIGHT                &key_repeat  &none
+&none   &kp K_PREV  &kt C_REWIND  &kp K_PLAY_PAUSE  &kp C_NEXT   &kp K_NEXT    &kp LEFT      &kp DOWN   &kp DOWN  &maj CAPSLOCK RA(COMMA)  &trans       &none
+                                  &trans            &trans       &mo 1         &mo 2         &kp RCTRL  &kp RALT
             >;
         };
 
