@@ -12,37 +12,6 @@
 
 / {
     macros {
-        flashcard: flashcard {
-            compatible = "zmk,behavior-macro";
-            label = "FLASHCARD";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LS(E) &kp LS(X) &kp A &kp O &kp I &kp RET &kp LS(K) &kp A &kp U &kp D &kp X &kp RET &kp LS(B) &kp V &kp P &kp U &kp EQUAL &kp X &kp P &kp SPACE &kp B &kp V &kp V &kp QMARK &kp RET &kp LS(K) &kp A &kp X &kp S &kp LS(N) &kp RET &kp A &kp SEMI &kp LS(N) &kp RET &kp LS(I) &kp LS(X) &kp D &kp LS(N) &kp SPACE &kp Z &kp Z &kp W &kp W &kp RET &kp LS(E) &kp D &kp QMARK &kp LS(E) &kp LS(X)>,
-                <&macro_tap>;
-        };
-
-        Questce: Questce {
-            compatible = "zmk,behavior-macro";
-            label = "QUESTCE";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LS(B) &kp V &kp P &kp U &kp EQUAL &kp X &kp P>,
-                <&macro_tap>;
-        };
-
-        que: que {
-            compatible = "zmk,behavior-macro";
-            label = "QUE";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp V &kp P>, <&macro_press>;
-        };
-
-        qu1: qu1 {
-            compatible = "zmk,behavior-macro";
-            label = "QU1";
-            #binding-cells = <0>;
-            bindings = <&kp B &kp V &kp V &kp QMARK>, <&macro_press>;
-        };
     };
 
     combos {
@@ -74,26 +43,6 @@
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <7 19>;
             layers = <0>;
-        };
-
-        QUE {
-            bindings = <&que>;
-            key-positions = <31 14 16>;
-        };
-
-        qu1 {
-            bindings = <&qu1>;
-            key-positions = <31 22 14>;
-        };
-
-        FC_flash_card {
-            bindings = <&flashcard>;
-            key-positions = <34 18>;
-        };
-
-        Questceque {
-            bindings = <&Questce>;
-            key-positions = <31 14 16>;
         };
 
         mPLUS {
@@ -161,8 +110,8 @@
 
             bindings = <
 &none   &kp N1          &kp N2        &kp N3            &kp N4       &kp N5        &kp N6        &kp N7     &kp N8    &kp N9                   &kp N0       &none
-&trans  &kp ESCAPE      &kp TAB       &key_repeat       &key_repeat  &kp K_MUTE    &kp LC(LEFT)  &kp LEFT   &kp UP    &kp RIGHT                &key_repeat  &trans
-&none   &kp C_PREVIOUS  &kt C_REWIND  &kp K_PLAY_PAUSE  &kp C_NEXT   &kp C_NEXT    &kp LEFT      &kp DOWN   &kp DOWN  &maj CAPSLOCK RA(COMMA)  &trans       &trans
+&trans  &kp ESCAPE      &kp TAB       &key_repeat       &key_repeat  &kp K_MUTE    &kp LC(LEFT)  &kp LEFT   &kp UP    &kp RIGHT                &key_repeat  &none
+&none   &kp C_PREVIOUS  &kt C_REWIND  &kp K_PLAY_PAUSE  &kp C_NEXT   &kp C_NEXT    &kp LEFT      &kp DOWN   &kp DOWN  &maj CAPSLOCK RA(COMMA)  &trans       &none
                                       &trans            &trans       &mo 1         &mo 2         &kp RCTRL  &kp RALT
             >;
         };
