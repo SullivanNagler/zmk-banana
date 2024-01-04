@@ -12,6 +12,19 @@
 
 / {
     macros {
+        virguleEspace: virguleEspace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp G &kp SPACE>;
+            label = "VIRGULEESPACE";
+        };
+
+        pointEspace: pointEspace {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp SPACE>;
+            label = "POINTESPACE";
+        };
     };
 
     combos {
@@ -48,6 +61,18 @@
         mPLUS {
             bindings = <&kp SQT>;
             key-positions = <21 33>;
+        };
+
+        virguleEspace {
+            bindings = <&virguleEspace>;
+            key-positions = <37 17>;
+            layers = <0>;
+        };
+
+        pointEspace {
+            bindings = <&pointEspace>;
+            key-positions = <28 37>;
+            layers = <0>;
         };
     };
 
