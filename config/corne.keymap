@@ -99,6 +99,11 @@
             bindings = <&repet10>;
             key-positions = <7 19>;
         };
+
+        interrogation {
+            bindings = <&kp LS(G)>;
+            key-positions = <25 30>;
+        };
     };
 
     behaviors {
