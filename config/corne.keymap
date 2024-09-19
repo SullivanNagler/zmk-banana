@@ -101,7 +101,7 @@
         };
 
         interrogation {
-            bindings = <&kp LS(G)>;
+            bindings = <&kp LS(N)>;
             key-positions = <25 30>;
         };
     };
